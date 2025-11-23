@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance & Payment Options | Healing Minds</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            background: #fafaf8;
+            color: #2d3b34;
+        }
+
+        /* HEADER */
+        header {
+            background: #f4f1ea;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #e2ded7;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 22px;
+            color: #2d3b34;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin: 0 18px;
+            text-decoration: none;
+            color: #4d5b52;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #1f3c2e;
+            border-bottom: 2px solid #1f3c2e;
+            padding-bottom: 4px;
+        }
+
+        .btn-appointment {
+            background: #2d5a4f;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .btn-appointment:hover {
+            background: #23473e;
+        }
+
+        /* PAGE CONTAINER */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px 50px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #1f3c2e;
+        }
+
+        h2 {
+            margin-top: 35px;
+            font-size: 26px;
+            color: #2d3b34;
+        }
+
+        p, li {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #3b453f;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 35px;
+            color: #7c867f;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #5B8B8A;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            .container {
+                padding: 30px 25px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo-text">HEALING MINDS</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="insurance.html" class="active">Insurance</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn-appointment">Book an appointment</a>
+</header>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <h1>Insurance & Payment Options</h1>
+
+    <p>
+        I strive to make mental health care both accessible and transparent. Below is an overview of accepted insurance plans, 
+        self-pay options, and payment information. You’re always welcome to reach out with any questions.
+    </p>
+
+    <h2>Accepted Insurance</h2>
+
+    <ul>
+        <li>***List your accepted insurance plans here (Aetna, Optum, Cigna, etc.)***</li>
+        <li>***Update this list whenever needed***</li>
+        <li>You may also use out-of-network benefits depending on your plan.</li>
+    </ul>
+
+    <h2>Self-Pay Rates</h2>
+    <p>
+        For clients who prefer not to use insurance or whose plans do not cover services, self-pay options are available.
+        Self-pay visits may offer:
+    </p>
+
+    <ul>
+        <li>More privacy</li>
+        <li>Flexible scheduling</li>
+        <li>No formal diagnosis required for reimbursement</li>
+    </ul>
+
+    <p>
+        Please contact me directly for current rates.
+    </p>
+
+    <h2>Superbills</h2>
+    <p>
+        If your insurance plan offers out-of-network reimbursement, I can provide a <strong>superbill</strong> upon request. 
+        This allows you to submit for potential reimbursement depending on your individual plan.
+        Reimbursement is not guaranteed and varies by insurer.
+    </p>
+
+    <h2>Questions?</h2>
+    <p>
+        I’m always here to help you understand your coverage and determine whether your insurance may be used for care. 
+        Please feel free to reach out anytime.
+    </p>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 Healing Minds. All rights reserved.
+    <a href="/privacy-policy">Privacy Policy &amp; SMS Terms</a>
+</footer>
+
+</body>
+</html>

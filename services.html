@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – Healing Minds</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 0;
+      background-color: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: #ffffff;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1f3d36;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin: 0 18px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #555;
+      font-weight: 500;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #1f3d36;
+    }
+
+    .btn-appointment {
+      background: #3c5f56;
+      color: white;
+      padding: 12px 26px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    /* MAIN CONTENT */
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 40px 80px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      color: #1f3d36;
+      margin-top: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    li {
+      margin-bottom: 14px;
+    }
+
+    li a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #3c5f56;
+      font-weight: 600;
+    }
+
+    li a:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      margin: 40px 0 30px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    footer a {
+      color: #3c5f56;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 6px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">HEALING MINDS</div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="insurance.html">Insurance</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn-appointment">Book an appointment</a>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <h1>Services</h1>
+
+    <ul>
+      <li><a href="psychiatric-evaluations.html">Psychiatric evaluations</a></li>
+      <li><a href="medication-management.html">Medication management</a></li>
+      <li><a href="anxiety-depression-treatment.html">Anxiety & depression treatment</a></li>
+      <li><a href="trauma-ptsd-care.html">Trauma & PTSD care</a></li>
+      <li><a href="adhd-assessment-treatment.html">ADHD assessment & treatment</a></li>
+      <li><a href="bipolar-disorder-management.html">Bipolar disorder management</a></li>
+      <li><a href="ocd-treatment.html">OCD treatment</a></li>
+      <li><a href="sleep-insomnia-support.html">Sleep & insomnia support</a></li>
+      <li><a href="grief-life-transitions.html">Grief & life transitions</a></li>
+    </ul>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Healing Minds. All rights reserved.
+    <a href="privacy-policy.html">Privacy Policy &amp; SMS Terms</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Healing Minds — Psychiatric Mental Health NP</title>
+  <meta name="description" content="Healing Minds — Compassionate psychiatric mental health care." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#F6F3F0;
+      --accent:#5B8B8A;      /* soft teal */
+      --accent-2:#A8C6BE;    /* gentle green */
+      --muted:#9C8F88;       /* warm neutral */
+      --text:#163D3B;        /* deep teal for text */
+      --card:#FFFFFF;
+      --radius:14px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    .page{
+      max-width:1200px;
+      margin:0 auto;
+      padding:18px 16px 40px;
+    }
+
+    /* TOP NAV BAR */
+    .top-nav{
+      background:#ffffff;
+      box-shadow:0 2px 6px rgba(22,61,59,0.06);
+    }
+    .nav-inner{
+      max-width:1100px;
+      margin:0 auto;
+      padding:10px 28px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .nav{
+      display:flex;
+      gap:26px;
+      font-size:15px;
+      flex-wrap:wrap;
+    }
+    .nav a{
+      text-decoration:none;
+      color:var(--text);
+      font-weight:600;
+    }
+    .nav a.active{
+      color:var(--accent);
+      border-bottom:2px solid var(--accent);
+      padding-bottom:2px;
+    }
+
+    .book-btn{
+      padding:8px 20px;
+      border-radius:999px;
+      background:var(--accent);
+      color:#ffffff;
+      text-decoration:none;
+      font-weight:600;
+      font-size:14px;
+      border:none;
+      white-space:nowrap;
+    }
+
+    /* HEADER / HERO */
+    .hero-header{
+      background:#ffffff;
+      padding:26px 30px;
+      border-radius:var(--radius);
+      margin-top:26px;
+      box-shadow:0 8px 22px rgba(22,61,59,0.06);
+    }
+    .hero{
+      display:flex;
+      gap:28px;
+      align-items:center;
+    }
+    .logo-wrap{
+      flex:0 0 260px;
+    }
+    .logo-wrap img.hero-logo{
+      display:block;
+      width:100%;
+      max-width:280px;
+      height:auto;
+      border-radius:18px;
+      box-shadow:0 8px 22px rgba(22,61,59,0.10);
+    }
+
+    .title{
+      flex:1;
+    }
+    .title h1{
+      margin:0 0 6px;
+      font-family:"Playfair Display",serif;
+      font-size:36px;
+      letter-spacing:1px;
+    }
+    .title .tagline{
+      margin:0 0 4px;
+      color:var(--muted);
+      font-size:15px;
+    }
+    .title .name-line{
+      margin:6px 0 0;
+      font-weight:600;
+      color:var(--text);
+    }
+    .title .name-line span{
+      font-weight:700;
+    }
+
+    /* MAIN LAYOUT */
+    .grid{
+      display:grid;
+      grid-template-columns:minmax(0,2fr) minmax(0,1.5fr);
+      gap:24px;
+      margin-top:28px;
+      align-items:flex-start;
+    }
+
+    .card{
+      background:var(--card);
+      padding:22px;
+      border-radius:var(--radius);
+      box-shadow:0 6px 18px rgba(22,61,59,0.04);
+    }
+
+    h2.section-title{
+      margin:0 0 12px 0;
+      font-family:"Playfair Display", serif;
+      color:var(--text);
+      font-size:20px;
+    }
+
+    .about p{
+      margin:0 0 12px 0;
+      color:#3f4a48;
+      line-height:1.6;
+    }
+
+    /* Allow other images to behave normally */
+    img{
+      max-width:100%;
+      height:auto;
+    }
+
+    /* Contact form */
+    form input, form textarea, form button {
+      width:100%;
+      padding:12px 14px;
+      font-size:14px;
+      border-radius:8px;
+      border:1px solid #e6e2de;
+      margin-bottom:10px;
+      font-family:inherit;
+    }
+    form textarea{min-height:120px;resize:vertical;}
+    form button{
+      background:var(--accent);
+      color:#fff;
+      font-weight:600;
+      border:none;
+      cursor:pointer;
+    }
+    form button:hover{
+      background:#476f6e;
+    }
+    .contact-info{
+      font-size:14px;
+      color:#4b5552;
+      margin-bottom:10px;
+    }
+
+    .location-card{
+      margin-top:18px;
+    }
+    .location-card h3{
+      margin:0 0 8px;
+      font-size:17px;
+      font-family:"Playfair Display",serif;
+    }
+    .location-card p{
+      margin:0 0 4px;
+      font-size:14px;
+      color:#4b5552;
+    }
+
+    footer{
+      text-align:center;
+      margin-top:28px;
+      font-size:13px;
+      color:var(--muted);
+    }
+    footer a{
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width:900px){
+      .hero{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      .logo-wrap{
+        width:200px;
+      }
+      .grid{
+        grid-template-columns:1fr;
+      }
+      .nav-inner{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+    }
+
+    @media (max-width:600px){
+      .page{
+        padding:12px 12px 26px;
+      }
+      .hero-header{
+        padding:18px 16px;
+      }
+      .title h1{
+        font-size:28px;
+      }
+      .logo-wrap{
+        width:180px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- TOP NAV -->
+  <div class="top-nav">
+    <div class="nav-inner">
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="insurance.html">Insurance</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="book-btn" href="contact.html">Book an appointment</a>
+    </div>
+  </div>
+
+  <div class="page">
+    <!-- HERO -->
+    <header class="hero-header">
+      <div class="hero">
+        <div class="logo-wrap">
+          <img src="logo.png" alt="Healing Minds logo" class="hero-logo" />
+        </div>
+        <div class="title">
+          <h1>HEALING MINDS</h1>
+          <p class="tagline">
+            Psychiatric Mental Health NP — Compassionate, evidence-based care
+          </p>
+          <p class="name-line">
+            <span>Ladan Razavi</span>, PMHNP-BC, MSN, CNS, APRN
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN GRID -->
+    <main class="grid">
+      <!-- MISSION SECTION (updated) -->
+      <section class="card about">
+        <h2 class="section-title">Mission</h2>
+
+        <p>
+          With over 20 years of experience in healthcare, my path began in the NICU, where I learned that healing is not only medical but also emotional. Supporting families during their most fragile moments taught me that the heart of medicine is human connection. That realization stayed with me and ultimately led me to the field of psychiatry.
+        </p>
+        <p>
+          As a Psychiatric Mental Health Nurse Practitioner, my mission is simple yet deeply personal: to offer a place where people feel truly seen, understood, and supported. I believe mental health care should feel like stepping into calm after a storm, where you can speak freely, explore openly, and rebuild with guidance rooted in empathy and evidence-based treatment.
+        </p>
+        <p>
+          I am committed to helping individuals make sense of their struggles, rediscover their strengths, and move toward a life that feels meaningful and aligned with who they are. My work is not just a profession. It is a continuation of a lifelong calling to stand with people during their hardest moments and help them find their way forward.
+        </p>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="card">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-info">
+          Please use the form below to reach out. I’ll respond as soon as possible.
+        </p>
+
+        <form name="contact" onsubmit="handleForm(event)">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="tel" name="phone" placeholder="Phone (optional)" />
+          <textarea name="message" placeholder="How can I help?" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+
+        <div class="location-card">
+          <h3>Location &amp; Hours</h3>
+          <p>Serving California via telehealth by appointment.</p>
+          <p>Mon–Fri: 9am–6pm</p>
+          <p>Saturday: 11am–4pm</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+  © 2025 Healing Minds. All rights reserved.
+  <a href="/privacy-policy">Privacy Policy &amp; SMS Terms</a>
+</footer>
+
+  </div>
+
+  <script>
+    function handleForm(e){
+      e.preventDefault();
+      alert("Thank you — we will get back to you shortly.");
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
