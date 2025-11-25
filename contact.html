@@ -1,239 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — Healing Minds</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Healing Minds</title>
+    <link rel="stylesheet" href="styles.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
 
-  <style>
-    :root {
-      --bg: #F6F3F0;
-      --text: #163D3B;
-      --accent: #4B6F6B;
-      --muted: #7D7D7D;
-      --card: #FFFFFF;
-      --shadow: rgba(22, 61, 59, 0.08);
-    }
+        header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
 
-    body {
-      margin: 0;
-      font-family: "Inter", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-    /* HEADER */
-    header {
-      background: #F6F3F0;
-      padding: 18px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #E8E2DD;
-    }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+        }
 
-    .logo {
-      font-family: "Playfair Display", serif;
-      font-size: 22px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      color: var(--text);
-    }
+        .container {
+            width: 90%;
+            max-width: 700px;
+            background: #fff;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
 
-    nav a {
-      margin: 0 18px;
-      color: var(--text);
-      font-size: 16px;
-      text-decoration: none;
-    }
-    nav a.active {
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: 4px;
-    }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-    .appt-btn {
-      background: var(--accent);
-      color: white;
-      padding: 10px 22px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 500;
-      box-shadow: 0 3px 8px var(--shadow);
-    }
+        form label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+        }
 
-    /* LAYOUT */
-    .wrapper {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-      display: flex;
-      gap: 40px;
-    }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-    .card {
-      background: var(--card);
-      padding: 32px;
-      border-radius: 16px;
-      box-shadow: 0 6px 18px var(--shadow);
-      flex: 1;
-    }
+        form button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #4a7cbb;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-    h1 {
-      font-family: "Playfair Display", serif;
-      font-size: 32px;
-      margin-top: 0;
-    }
+        form button:hover {
+            background-color: #3a6ba5;
+        }
 
-    label {
-      font-size: 14px;
-      font-weight: 500;
-      display: block;
-      margin-bottom: 6px;
-      color: var(--text);
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 12px;
-      border-radius: 8px;
-      border: 1px solid #DDD;
-      font-size: 15px;
-      background: #FBF9F7;
-    }
-
-    textarea {
-      height: 130px;
-      resize: vertical;
-    }
-
-    .note {
-      margin-top: 8px;
-      font-size: 14px;
-      color: #6A6A6A;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 12px 32px;
-      background: var(--accent);
-      color: white;
-      border-radius: 30px;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
-      box-shadow: 0 3px 8px var(--shadow);
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 30px 0;
-      margin-top: 60px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-    footer a {
-      color: var(--accent);
-      margin-left: 6px;
-      text-decoration: none;
-    }
-  </style>
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="logo">HEALING MINDS</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="insurance.html">Insurance</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-    <a href="https://doxy.me" class="appt-btn">Book an appointment</a>
-  </header>
+<header>
+    <h1>Healing Minds</h1>
+</header>
 
-  <!-- MAIN CONTENT -->
-  <div class="wrapper">
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="insurance.html">Insurance</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-    <!-- LEFT FORM -->
-    <div class="card">
-      <h1>Contact</h1>
+<div class="container">
+    <h2>Request an Appointment</h2>
 
-      <p>Please use this form to request an appointment, ask a question, or send a brief message. This form is not for emergencies.</p>
+    <form action="https://formspree.io/f/xeowkalo" method="POST">
+        <label>Full Name</label>
+        <input type="text" name="name" required>
 
-      <label>Name</label>
-      <input type="text" />
+        <label>Email Address</label>
+        <input type="email" name="email" required>
 
-      <label>Email</label>
-      <input type="email" />
+        <label>Phone Number</label>
+        <input type="text" name="phone">
 
-      <label>Phone (optional)</label>
-      <input type="text" />
+        <label>Message</label>
+        <textarea name="message" rows="6" required></textarea>
 
-      <label>Preferred contact</label>
-      <select>
-        <option>Email</option>
-        <option>Phone</option>
-      </select>
+        <button type="submit">Send Request</button>
+    </form>
+</div>
 
-      <label>Reason for contacting</label>
-      <select>
-        <option>New patient inquiry</option>
-        <option>Follow-up question</option>
-        <option>Scheduling request</option>
-        <option>Other</option>
-      </select>
-
-      <label>Message</label>
-      <textarea></textarea>
-
-      <p class="note">
-        Please do not include crisis information or very detailed personal history.  
-        A brief summary is enough to get started.
-      </p>
-
-      <button>Submit</button>
-    </div>
-
-    <!-- RIGHT SIDE BOX -->
-    <div class="card">
-      <h2 style="margin-top:0;">Location & Hours</h2>
-
-      <p>
-        All visits are offered via secure telehealth for individuals located in California.
-      </p>
-
-      <p>
-        <strong>Serving:</strong> Adults and adolescents by appointment.<br><br>
-
-        <strong>Email:</strong> LRAZAVI@healingmindsmed.com<br>
-        <strong>Phone:</strong> 949-777-6469
-      </p>
-
-      <p><strong>Hours</strong><br>
-        Mon–Fri: 9am–6pm<br>
-        Saturday: 11am–4pm
-      </p>
-
-      <p style="font-size:14px; color:#555;">
-        If you are experiencing a medical or psychiatric emergency,  
-        please call 911 or go to your nearest emergency room.  
-        You may also contact 988 for the Suicide & Crisis Lifeline.
-      </p>
-    </div>
-
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    © 2025 Healing Minds. All rights reserved.
-    <a href="privacy-policy.html">Privacy Policy & SMS Terms</a>
-  </footer>
+<footer>
+    <p>© 2025 Healing Minds. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
